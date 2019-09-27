@@ -1,5 +1,5 @@
 {% set name = "pyxdf" %}
-{% set version = "1.15.2" %}
+{% set version = "1.16.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: c4a2fe9058274e3da7637b0f4afcf54365a616a6cd71333eb5e18e94caa7c86b
+  sha256: 1a1bb80292a90f55b606b2de948e4fb24690e8c1d2419fcdf26fa1df526045db
 
 build:
   noarch: python
