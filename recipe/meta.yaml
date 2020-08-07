@@ -1,5 +1,5 @@
 {% set name = "pyxdf" %}
-{% set version = "1.16.2" %}
+{% set version = "1.16.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: aa0dfa4ed2d9ff5ec206d685144223822aefcd57eec940cd30f7cb0f16776e89
+  sha256: d7744a8ba81992aa44d0ce740c256113324178903cbe18a754ee9f2735649123
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -35,7 +35,7 @@ about:
   license: BSD-2-Clause
   license_family: BSD
   license_file: LICENSE
-  summary: 'Python library for importing the Extensible Data Format (XDF)'
+  summary: Python library for importing the Extensible Data Format (XDF)
 
 extra:
   recipe-maintainers:
