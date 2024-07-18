@@ -1,13 +1,13 @@
 {% set name = "pyxdf" %}
-{% set version = "1.16.6" %}
+{% set version = "1.16.8" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 7d1aa8b6a07703a3cea0805b45d232e00081dd8678fd0f49e0421bcfc29078e9
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 9c75db4e42b46bd8dbd69ff7ab190d7a461f55e28e2ff8279d5136d57f7849f6
 
 build:
   noarch: python
@@ -16,12 +16,12 @@ build:
 
 requirements:
   host:
-    - python >=3.5
+    - python >=3.9
     - pip
     - setuptools
     - setuptools_scm
   run:
-    - python >=3.5
+    - python >=3.9
     - numpy
     - setuptools
 
