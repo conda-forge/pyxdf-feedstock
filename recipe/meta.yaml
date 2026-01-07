@@ -1,5 +1,5 @@
 {% set name = "pyxdf" %}
-{% set version = "1.17.1" %}
+{% set version = "1.17.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 161044dec30410f5aa19691888b950cbe26c55adbacb72aa8c37bc518950302f
+  sha256: 9c8fd726f940014265d1968009e23b296a04d000ced95a8e8db6b352bde0eb4b
 
 build:
   noarch: python
